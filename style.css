@@ -1,0 +1,93 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Pacifico&display=swap');
+
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: aliceblue;
+    font-family: Arial, Helvetica, sans-serif
+}
+
+
+#container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+hr {
+    border: 1px ridge;
+    margin-bottom: 1rem;
+}
+
+#content {
+    background-color: #fff;
+    width: 75vh;
+    height: auto;
+    padding: 5px 16px;
+    border: 2px solid blueviolet;
+    border-top-left-radius: 14.5px;
+    border-bottom-right-radius: 14.5px;
+    box-shadow: 10px 10px 4px -4px rgba(184,184,184,1);
+
+}
+
+#content h1 {
+    font-family: "Pacifico", cursive, sans-serif;
+    font-weight: 500;
+}
+
+u {
+    font-style: oblique;
+    text-decoration: none;
+    font-size: larger;
+    color: yellowgreen;
+}
+
+i {
+    font-style: initial;
+    font-weight: 600;
+    color: crimson;
+}
+
+b {
+    font-style: initial;
+    font-weight: 600;
+    color: rgb(160, 1, 160);
+}
+
+#content button {
+    height: 75px;
+    width: 170px;
+    font-size: 12pt;
+    transition: 0.2s;
+    border-radius: 5.2px;
+    font-weight: 600;
+    background-color: blueviolet;
+    border: 2px solid ;
+    color: #ffffff;
+    cursor: pointer;
+}
+
+#content p {
+    font-weight: 600;
+}
+
+strong {
+    color: blue;
+}
+
+#content button:hover {
+    background-color: #ffffff;
+    color: blueviolet;
+    border: 2px solid blueviolet;
+}
+
+#result {
+    margin-bottom: 15px;
+    line-height: 1.5rem;
+    font-weight: 600;
+}
+
+
