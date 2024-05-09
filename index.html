@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Adivinhe o Número!</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="container">
+        <div id="content">
+            <h1>Tente adivinhar o Número</h1>
+            <hr>
+            <button>Tente adivinhar</button>
+            <p>Já pensei em um valor entre <strong>1</strong> e <strong>100</strong>...</p>
+            <div id="result">
+            </div>
+        </div>
+    </div>
+
+    <script>
+        var btn = document.querySelector('button')
+        var res = document.getElementById('result')
+
+        btn.addEventListener ('click', clicou) 
+
+        function clicou() {
+            var num = window.prompt('Qual é o seu palpite?')
+            
+            valor = 54
+
+             if (num < valor) {
+            res.innerHTML += `Você falou <strong>${num}</strong>. Meu número é <i>MAIOR!</i><br>`
+         }
+             if (num > valor) {
+                 res.innerHTML += `Você falou <strong>${num}</strong>. Meu número é <b>MENOR!</b><br>`
+             }
+
+             if (num == valor) {
+                res.innerHTML += `<u>PARABÉNS!</u> Você acertou! Eu tinha sorteado o valor <u>${valor}</u><br>`
+             } 
+        }
+    </script>
+</body>
+</html>
