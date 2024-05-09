@@ -25,20 +25,24 @@
 
         btn.addEventListener ('click', clicou) 
 
-        function clicou() {
-            var num = window.prompt('Qual é o seu palpite?')
-            
-            valor = 54
+        function gerarValor(min, max) {
+        return Math.floor(Math.random() * (max - min + 1)) + min;
+        }
 
-             if (num < valor) {
-            res.innerHTML += `Você falou <strong>${num}</strong>. Meu número é <i>MAIOR!</i><br>`
+        var valorN = gerarValor(1, 100);
+
+        function clicou() {
+            var numero = window.prompt('Qual é o seu palpite?')
+            
+             if (numero < valorN) {
+            res.innerHTML += `Você falou <strong>${numero}</strong>. Meu número é <i>MAIOR!</i><br>`
          }
-             if (num > valor) {
-                 res.innerHTML += `Você falou <strong>${num}</strong>. Meu número é <b>MENOR!</b><br>`
+             if (numero > valorN) {
+                 res.innerHTML += `Você falou <strong>${numero}</strong>. Meu número é <b>MENOR!</b><br>`
              }
 
-             if (num == valor) {
-                res.innerHTML += `<u>PARABÉNS!</u> Você acertou! Eu tinha sorteado o valor <u>${valor}</u><br>`
+             if (numero == valorN) {
+                res.innerHTML += `<u>PARABÉNS!</u> Você acertou! Eu tinha sorteado o valor <u>${valorN}</u><br>`
              } 
         }
     </script>
